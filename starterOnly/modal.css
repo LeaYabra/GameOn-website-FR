@@ -535,10 +535,9 @@ footer {
     opacity: 1;
   }
 }
-
 input.error {
   border-color: red;
-  border-width: 50%;
+  border-width: 1.5px;
 }
 .error-message {
   color: red;

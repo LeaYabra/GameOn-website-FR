@@ -56,150 +56,82 @@
             <form name="reserve" action="index.html" method="get">
               <div class="formData">
                 <label for="first">Prénom</label><br />
-                <input
-                  class="text-control"
-                  type="text"
-                  id="first"
-                  name="first"
-                />
-                <span class="error-message" id="name-error"></span>
+                <input class="text-control" type="text" id="first" name="first" />
+                <span class="error-message" id="first-error"></span>
                 <br />
               </div>
               <div class="formData">
                 <label for="last">Nom</label><br />
-                <input
-                  class="text-control"
-                  type="text"
-                  id="last"
-                  name="last"
-                />
-                <span class="error-message" id="name-error1"></span>
+                <input class="text-control" type="text" id="last" name="last" />
+                <span class="error-message" id="last-error"></span>
                 <br />
               </div>
               <div class="formData">
                 <label for="email">E-mail</label><br />
-                <input
-                  class="text-control"
-                  type="email"
-                  id="email"
-                  name="email"
-                /> 
-                <span class="error-message" id="name-error2"></span>
+                <input class="text-control" type="text" id="email" name="email" />
+                <span class="error-message" id="email-error"></span>
                 <br />
               </div>
               <div class="formData">
                 <label for="birthdate">Date de naissance</label><br />
-                <input
-                  class="text-control"
-                  type="date"
-                  id="birthdate"
-                  name="birthdate"
-                /> <span class="error-message" id="name-error3"></span>
+                <input class="text-control" type="date" id="birthdate" name="birthdate" />
+                <span class="error-message" id="birthdate-error"></span>
                 <br />
               </div>
               <div class="formData">
-                <label for="quantity"
-                  >À combien de tournois GameOn avez-vous déjà participé
-                  ?</label
-                ><br />
-                <input
-                  type="number"
-                  class="text-control"
-                  id="quantity"
-                  name="quantity"
-                  min="0"
-                  max="99"
-                /> <span class="error-message" id="name-error4"></span>
+                <label for="quantity">À combien de tournois GameOn avez-vous déjà participé ?</label>
+                <br />
+                <input type="number" class="text-control" id="quantity" name="quantity" min="0" max="99" />
+                <span class="error-message" id="quantity-error"></span>
               </div>
               <p class="text-label">
                 A quel tournoi souhaitez-vous participer cette année ?
               </p>
               <div class="formData">
-                <input
-                  class="checkbox-input"
-                  type="radio"
-                  id="location1"
-                  name="location"
-                  value="New York"
-                />
+                <input class="checkbox-input" type="radio" id="location1" name="location" value="New York"/>
                 <label class="checkbox-label" for="location1">
                   <span class="checkbox-icon"></span>
-                  New York</label
-                >
-                <input
-                  class="checkbox-input"
-                  type="radio"
-                  id="location2"
-                  name="location"
-                  value="San Francisco"
-                />
+                  New York
+                </label>
+                <input class="checkbox-input" type="radio" id="location2" name="location" value="San Francisco" />
                 <label class="checkbox-label" for="location2">
                   <span class="checkbox-icon"></span>
-                  San Francisco</label
-                >
-                <input
-                  class="checkbox-input"
-                  type="radio"
-                  id="location3"
-                  name="location"
-                  value="Seattle"
-                />
+                  San Francisco
+                </label>
+                <input class="checkbox-input" type="radio" id="location3" name="location" value="Seattle" />
                 <label class="checkbox-label" for="location3">
                   <span class="checkbox-icon"></span>
-                  Seattle</label
-                >
-                <input
-                  class="checkbox-input"
-                  type="radio"
-                  id="location4"
-                  name="location"
-                  value="Chicago"
-                />
+                  Seattle
+                </label>
+                <input class="checkbox-input" type="radio" id="location4" name="location" value="Chicago" />
                 <label class="checkbox-label" for="location4">
-                  <span class="checkbox-icon"></span>
-                  Chicago</label
-                >
-                <input
-                  class="checkbox-input"
-                  type="radio"
-                  id="location5"
-                  name="location"
-                  value="Boston"
-                />
+                <span class="checkbox-icon"></span>
+                  Chicago
+                </label>
+                <input class="checkbox-input" type="radio" id="location5" name="location" value="Boston" />
                 <label class="checkbox-label" for="location5">
                   <span class="checkbox-icon"></span>
-                  Boston</label
-                >
-                <input
-                  class="checkbox-input"
-                  type="radio"
-                  id="location6"
-                  name="location"
-                  value="Portland"
-                />
+                  Boston
+                </label>
+                <input class="checkbox-input" type="radio" id="location6" name="location" value="Portland" />
                 <label class="checkbox-label" for="location6">
                   <span class="checkbox-icon"></span>
-                  Portland</label
-                > 
-             </div>
-              <span class="error-message" id="name-error5"></span>
-              
+                  Portland
+                </label>
+              </div>
+              <span class="error-message" id="location-error"></span>
+
               <div class="formData">
-                <input
-                  class="checkbox-input"
-                  type="checkbox"
-                  id="checkbox1"
-                  checked
-                />
-                <label class="checkbox2-label" for="checkbox1" >
+                <input class="checkbox-input" type="checkbox" id="checkbox1" name="cgu" checked />
+                <label class="checkbox2-label" for="checkbox1">
                   <span class="checkbox-icon"></span>
                   J'ai lu et accepté les conditions d'utilisation.
-                  <br/>
-                 <span class="error-message" id="name-error6"></span>
+                  <br />
+                  <span class="error-message" id="cgu-error"></span>
                 </label>
-               
+
                 <br />
-                <input class="checkbox-input" type="checkbox" id="checkbox2" />
+                <input class="checkbox-input" type="checkbox" id="checkbox2" name="info"/>
                 <label class="checkbox2-label" for="checkbox2">
                   <span class="checkbox-icon"></span>
                   Je souhaite être prévenu des prochains évènements.
@@ -216,11 +148,11 @@
             <div id="modal-confirm" class="modal">
               <div class="modal-rep">
                 <span class="close js-close"></span>
-                <p class="textConfirm"> Merci pour<br/> votre inscription </p>
-                <button
-                class="button btn-close">
-                  Fermer
-                </button>
+                <p class="textConfirm">
+                  Merci pour<br />
+                  votre inscription
+                </p>
+                <button class="button btn-close js-close">Fermer</button>
               </div>
             </div>
           </div>
