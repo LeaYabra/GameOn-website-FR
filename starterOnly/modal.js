@@ -42,7 +42,7 @@ Array.from(closeModals).forEach(function (btnClose) {
   });
 });
 
-// verification du formulaire
+// form verification
 
 const validate = function (event) {
   event.preventDefault(); // Empêche l'envoi du formulaire
