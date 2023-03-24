@@ -35,14 +35,14 @@ modalBtn.forEach((btn) => btn.addEventListener("click", launchModal));
 function launchModal() {
   modalbg.style.display = "block";
 }
-// Fermer la modale lorsque l'utilisateur clique sur le span
+// close modal
 Array.from(closeModals).forEach(function (btnClose) {
   btnClose.addEventListener("click", function () {
     modal.style.display = "none";
   });
 });
 
-// verification du formulaire
+// form verification
 
 const validate = function (event) {
   event.preventDefault(); // Empêche l'envoi du formulaire
