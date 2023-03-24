@@ -7,6 +7,7 @@ function editNav() {
   }
 }
 
+// verification d'email
 function validateEmail(email) {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailRegex.test(email);
@@ -49,6 +50,7 @@ const validate = function (event) {
   const formData = new FormData(form);
   const errorMessages = document.getElementsByClassName("error-message");
   const allInputs = document.querySelectorAll("input");
+  // supprime le style d'erreur si valide
   Array.from(allInputs).forEach(function (input) {
     input.classList.remove("error");
   });
