@@ -6,7 +6,7 @@ function editNav() {
     x.className = "topnav";
   }
 }
-
+// verification d'email
 function validateEmail(email) {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailRegex.test(email);
@@ -35,7 +35,7 @@ modalBtn.forEach((btn) => btn.addEventListener("click", launchModal));
 function launchModal() {
   modalbg.style.display = "block";
 }
-// Fermer la modale lorsque l'utilisateur clique sur le span
+// close modal
 Array.from(closeModals).forEach(function (btnClose) {
   btnClose.addEventListener("click", function () {
     modal.style.display = "none";
@@ -49,6 +49,7 @@ const validate = function (event) {
   const formData = new FormData(form);
   const errorMessages = document.getElementsByClassName("error-message");
   const allInputs = document.querySelectorAll("input");
+  // enleve le style d'erreur si correcte
   Array.from(allInputs).forEach(function (input) {
     input.classList.remove("error");
   });
@@ -60,14 +61,12 @@ const validate = function (event) {
   if (formData.get("first").length < 2) {
     isValid = false;
     first.classList.add("error");
-    firstError.textContent =
-      "Veuillez saisir 2 caractères ou plus pour le prénom.";
+    firstError.textContent = "Veuillez saisir 2 caractères ou plus pour le prénom.";
   }
   if (formData.get("last").length < 2) {
     isValid = false;
     last.classList.add("error");
-    lastError.textContent =
-      "Veuillez saisir 2 caractères ou plus pour le nom.";
+    lastError.textContent ="Veuillez saisir 2 caractères ou plus pour le nom.";
   }
   if (formData.get("email") === "") {
     isValid = false;
@@ -76,7 +75,7 @@ const validate = function (event) {
   } else if (!validateEmail(formData.get("email"))) {
     isValid = false;
     email.classList.add("error");
-    emailError.textContent = "L'adresse email n'est pas valide";
+    emailError.textContent = "L'adresse email n'est pas valide.";
   }
   if (formData.get("birthdate") === "") {
     isValid = false;
@@ -95,8 +94,7 @@ const validate = function (event) {
   }
   if (formData.get("cgu") === null) {
     isValid = false;
-    cguError.textContent =
-      "Veuillez vérifier que vous acceptez les termes et conditions.";
+    cguError.textContent ="Veuillez vérifier que vous acceptez les termes et conditions.";
   }
   if (isValid) {
     modalConfirm.style.display = "block";
