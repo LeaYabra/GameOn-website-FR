@@ -85,7 +85,6 @@ const validate = function (event) {
     quantity.classList.add("error");
     quantityError.textContent = "Veuillez saisir une valeur numérique.";
   }
-  console.log("radio location", formData.get("location"));
   if (formData.get("location") === null) {
     isValid = false;
     locationError.textContent = "Veuillez choisir une option.";
