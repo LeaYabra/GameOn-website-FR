@@ -6,7 +6,7 @@ function editNav() {
     x.className = "topnav";
   }
 }
-
+// validation email
 function validateEmail(email) {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailRegex.test(email);
@@ -43,7 +43,6 @@ Array.from(closeModals).forEach(function (btnClose) {
 });
 
 // form verification
-
 const validate = function (event) {
   event.preventDefault(); // Empêche l'envoi du formulaire
   const formData = new FormData(form);
