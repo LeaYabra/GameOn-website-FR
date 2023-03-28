@@ -56,12 +56,12 @@ const validate = function (event) {
   });
   let isValid = true;
 
-  if (formData.get("first").length < 2) {
+  if (formData.get("first").trim().length < 2) {
     isValid = false;
     first.classList.add("error");
     firstError.textContent = "Veuillez saisir 2 caractères ou plus pour le prénom.";
   }
-  if (formData.get("last").length < 2) {
+  if (formData.get("last").trim().length < 2) {
     isValid = false;
     last.classList.add("error");
     lastError.textContent ="Veuillez saisir 2 caractères ou plus pour le nom.";
